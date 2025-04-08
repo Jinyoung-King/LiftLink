@@ -68,16 +68,6 @@ public class ProfileFragment extends Fragment {
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
 
-//        FirebaseUser user = auth.getCurrentUser();
-//        if (user != null) {
-//            // binding 초기화된 후 안전하게 호출
-//            binding.getRoot().post(() -> loadUserProfile(user.getUid()));
-//        } else {
-//            Toast.makeText(getActivity(), "로그인이 필요합니다.", Toast.LENGTH_SHORT).show();
-//            startActivity(new Intent(getActivity(), LoginActivity.class));
-//            requireActivity().finish();
-//        }
-
         // 기타 클릭 리스너 등 설정
         binding.btnLogout.setOnClickListener(v -> {
             auth.signOut();
