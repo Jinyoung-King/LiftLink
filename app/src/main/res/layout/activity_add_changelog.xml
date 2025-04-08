@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="설명"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="작성자"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="태그 (예: 버그수정, 기능추가)"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="등록하기" />
+    </LinearLayout>
+</ScrollView>

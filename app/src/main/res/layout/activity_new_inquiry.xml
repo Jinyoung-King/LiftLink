@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- 단계별 UI -->
+    <LinearLayout
+        android:id="@+id/step1_vehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚜 차량 선택"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="원하시는 차량을 선택해주세요"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listViewVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/step2_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="작업 높이를 선택하세요"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listView_heights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:listSelector="@android:color/primary_text_light" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/step3_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛠 작업 내용 선택"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listView_work_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:listSelector="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step4_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 지역 선택"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSelectRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역 선택하기" />
+
+        <TextView
+            android:id="@+id/txtSelectedRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="지역 선택하기 버튼을 클릭하여 주세요"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step5_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 날짜 선택"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜 선택" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/step6_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏳ 예상 소요 시간 입력"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_go_to_estimated_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예상 소요시간 입력하기" />
+
+        <TextView
+            android:id="@+id/txtSelectedDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="예상 소요시간 입력하기 버튼을 클릭하여 주세요" />
+    </LinearLayout>
+
+    <!-- 이전/다음 버튼 -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/previous"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnNext"
+            style="?android:attr/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- Vehicle -->
+    <TextView
+        android:id="@+id/text_vehicle_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 차량"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="차량 미설정"
+        android:textSize="14sp" />
+
+
+    <!-- Height -->
+    <TextView
+        android:id="@+id/text_height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 높이"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="높이 미설정"
+        android:textSize="14sp" />
+
+    <!-- Work -->
+    <TextView
+        android:id="@+id/text_work_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 내용"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="작업 미설정"
+        android:textSize="14sp" />
+
+    <!-- Region -->
+    <TextView
+        android:id="@+id/text_region_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지역"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="지역 미설정"
+        android:textSize="14sp" />
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/text_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="날짜 미설정"
+        android:textSize="14sp" />
+
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/text_duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작업 시간"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="시간 미설정"
+        android:textSize="14sp" />
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/text_timestamp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="견적문의 시각"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="문의 시각 미설정"
+        android:textSize="14sp" />
+
+</LinearLayout>

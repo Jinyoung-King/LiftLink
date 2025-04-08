@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:fitsSystemWindows="true">
+
+    <!-- 환영 메시지 -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안녕하세요, 사용자님!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <!-- 진행 중인 예약 상태 -->
+    <TextView
+        android:id="@+id/tvReservationStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진행 중인 예약: 0건"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="20dp"/>
+
+    <!-- 빠른 액션 버튼 -->
+    <Button
+        android:id="@+id/btnNewInquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="견적 문의하기"
+        android:backgroundTint="?attr/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/btnMyInquiries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의한 견적 목록"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="?attr/colorSecondary"
+        />
+
+    <Button
+        android:id="@+id/btnMyTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="테스트 버튼"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- 공지사항 -->
+    <TextView
+        android:id="@+id/tvNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚧 공지사항: 신규 기능 업데이트 완료!"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingTop="20dp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크 박스"
+        />
+
+
+</LinearLayout>

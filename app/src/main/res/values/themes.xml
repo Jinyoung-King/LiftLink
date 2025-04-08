@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LiftLink" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.LiftLink.SpringWarm" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/spring_warm_primary</item>
+        <item name="colorSecondary">@color/spring_warm_secondary</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="Theme.LiftLink.SummerCool" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/summer_cool_primary</item>
+        <item name="colorSecondary">@color/summer_cool_secondary</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="Theme.LiftLink.AutumnWarm" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/autumn_warm_primary</item>
+        <item name="colorSecondary">@color/autumn_warm_secondary</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="Theme.LiftLink.WinterCool" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/winter_cool_primary</item>
+        <item name="colorSecondary">@color/winter_cool_secondary</item>
+
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- 버튼 스타일 정의 -->
+    <style name="CustomButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+</resources>

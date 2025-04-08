@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_options">
+        <item>사다리차</item>
+        <item>스카이차</item>
+        <item>상담 후 결정</item>
+    </string-array>
+
+    <string-array name="work_heights">
+        <item>5층 이하</item>
+        <item>6 ~ 7층</item>
+        <item>8 ~ 9층</item>
+        <item>10 ~ 11층</item>
+        <item>12 ~ 13층</item>
+        <item>14층 이상</item>
+    </string-array>
+
+    <string-array name="work_types">
+        <item>이삿짐 운반</item>
+        <item>건설 자재 운반</item>
+        <item>폐기물 운반</item>
+        <item>샷시 작업</item>
+        <!-- 2025-04-06 고객 요청으로 가구 운반 제거 -->
+        <!--                <item>가구 운반</item>-->
+        <item>가전, 가구 및 기타 작업</item>
+        <item>간판 설치</item>
+        <item>기타 작업</item>
+    </string-array>
+
+</resources>

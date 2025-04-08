@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnSpringWarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌸 봄 웜톤" />
+
+    <Button
+        android:id="@+id/btnSummerCool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="❄️ 여름 쿨톤" />
+
+    <Button
+        android:id="@+id/btnAutumnWarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍂 가을 웜톤" />
+
+    <Button
+        android:id="@+id/btnWinterCool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⛄ 겨울 쿨톤" />
+
+    <Button
+        android:id="@+id/btnDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔧 시스템 기본값" />
+
+</LinearLayout>

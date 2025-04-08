@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Spring Warm -->
+    <color name="spring_warm_primary">#FFD700</color> <!-- Gold -->
+    <color name="spring_warm_secondary">#FF8C00</color> <!-- Dark Orange -->
+
+    <!-- Summer Cool -->
+    <color name="summer_cool_primary">#87CEEB</color> <!-- Sky Blue -->
+    <color name="summer_cool_secondary">#4682B4</color> <!-- Steel Blue -->
+
+    <!-- Autumn Warm -->
+    <color name="autumn_warm_primary">#8B4513</color> <!-- Saddle Brown -->
+    <color name="autumn_warm_secondary">#D2691E</color> <!-- Chocolate -->
+
+    <!-- Winter Cool -->
+    <color name="winter_cool_primary">#483D8B</color> <!-- Dark Slate Blue -->
+    <color name="winter_cool_secondary">#191970</color> <!-- Midnight Blue -->
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533453906161",
+    "project_id": "liftlink-e93d0",
+    "storage_bucket": "liftlink-e93d0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533453906161:android:5e8769040efefb63298950",
+        "android_client_info": {
+          "package_name": "com.jiny.liftlink"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAQII2zx02UMBdmb_cw9T_bLhdQLfXFtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_add_a_photo"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:contentDescription="프로필 이미지 선택" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="emailAddress"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="phone"
+        android:hint="전화번호"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="postalAddress"
+        android:hint="주소"
+        android:inputType="textPostalAddress"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:hint="@string/verifyPassword"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:padding="12dp"/>
+
+</LinearLayout>

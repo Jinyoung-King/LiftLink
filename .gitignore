@@ -1,0 +1,13 @@
+# Android/Java specific
+.gradle/
+.idea/
+local.properties
+*.iml
+build/
+captures/
+
+# Sign-in keys
+*.jks
+
+# Others
+.DS_Store
