@@ -1,10 +1,12 @@
 # Android/Java specific
 .gradle/
 .idea/
-local.properties
 *.iml
 build/
 captures/
+# 버전 및 인증서 파일 무시
+version.properties
+local.properties
 
 # Sign-in keys
 *.jks
