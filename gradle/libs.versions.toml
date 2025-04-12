@@ -1,5 +1,6 @@
 [versions]
 agp = "8.8.2"
+firebaseAppdistribution = "5.1.1"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -8,6 +9,7 @@ lombokVersion = "1.18.36"
 material = "1.10.0"
 
 [libraries]
+firebase-appdistribution = { module = "com.google.firebase:firebase-appdistribution", version.ref = "firebaseAppdistribution" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
