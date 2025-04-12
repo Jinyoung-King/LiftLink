@@ -106,6 +106,12 @@ public class ProfileFragment extends Fragment {
         if (binding == null || getActivity() == null) return;
 
         db.collection("users").document(userId).get().addOnSuccessListener(documentSnapshot -> {
+            if (auth.getCurrentUser() == null) {
+                Log.e("ProfileFragment", "유저 정보가 없습니다.");
+                Toast.makeText(getActivity(), "사용자 정보를 불러오는 중 오류가 발생했습니다.", Toast.LENGTH_LONG).show();
+                return;
+            }
+
             if (documentSnapshot.exists()) {
                 binding.textViewName.setText(documentSnapshot.getString("name"));
                 binding.textViewEmail.setText(Objects.requireNonNull(auth.getCurrentUser()).getEmail());
