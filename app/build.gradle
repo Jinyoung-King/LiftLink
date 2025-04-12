@@ -1,6 +1,23 @@
+def getVersionCode() {
+    def versionPropsFile = file('version.properties')
+    if (!versionPropsFile.exists()) {
+        versionPropsFile.createNewFile()
+        versionPropsFile.text = "VERSION_CODE=1"
+    }
+
+    def Properties versionProps = new Properties()
+    versionProps.load(new FileInputStream(versionPropsFile))
+    def code = versionProps['VERSION_CODE'].toInteger() + 1
+    versionProps['VERSION_CODE'] = code.toString()
+    versionProps.store(versionPropsFile.newWriter(), null)
+
+    return code
+}
+
 plugins {
     alias(libs.plugins.android.application)
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.appdistribution'
 }
 
 android {
@@ -11,8 +28,9 @@ android {
         applicationId "com.jiny.liftlink"
         minSdk 24
         targetSdk 35
-        versionCode 1
-        versionName "1.0"
+//        versionCode 1
+        versionCode getVersionCode()
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -62,4 +80,14 @@ dependencies {
     // Lombok 의존성 추가
     compileOnly libs.projectlombok.lombok
     annotationProcessor libs.projectlombok.lombok
+}
+
+firebaseAppDistribution {
+    serviceCredentialsFile="./service-account.json" // 서비스 계정 키 파일 경로
+    releaseNotes="초기 베타 배포 버전입니다." // 릴리즈 노트
+    testers="kjylike@gmail.com,yheehyun@gmail.com" // 베타 테스터 이메일
+}
+
+tasks.register("deployRelease") {
+    dependsOn "assembleRelease", "appDistributionUploadRelease"
 }
