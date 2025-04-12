@@ -8,6 +8,7 @@ captures/
 
 # Sign-in keys
 *.jks
+service-account.json
 
 # Others
 .DS_Store
