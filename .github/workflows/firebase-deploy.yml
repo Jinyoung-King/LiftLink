@@ -31,7 +31,7 @@ jobs:
       - name: Decode Keystore
         run: |
           echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > keystore.jks
-          cat keystore.jks
+          ls -al
 
       - name: Create local.properties
         run: |
