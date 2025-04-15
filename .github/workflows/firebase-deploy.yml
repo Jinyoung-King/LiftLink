@@ -30,13 +30,13 @@ jobs:
 
       - name: Decode Keystore
         run: |
-          echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > keystore.jks
+          echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > app/keystore.jks
           pwd
           ls -al
 
       - name: Create local.properties
         run: |
-          echo "KEYSTORE_FILE=keystore.jks" >> local.properties 
+          echo "KEYSTORE_FILE=app/keystore.jks" >> local.properties 
           echo "KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> local.properties
           echo "KEY_ALIAS=${{ secrets.KEY_ALIAS }}" >> local.properties
           echo "KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}" >> local.properties
