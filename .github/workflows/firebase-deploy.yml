@@ -28,6 +28,16 @@ jobs:
         run: |
           echo "${{ secrets.FIREBASE_CREDENTIALS }}" > service-account.json
 
+      - name: Decode Keystore
+        run: echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > keystore.jks
+
+      - name: Create local.properties
+        run: |
+          echo "KEYSTORE_FILE=keystore.jks" >> local.properties 
+          echo "KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> local.properties
+          echo "KEY_ALIAS=${{ secrets.KEY_ALIAS }}" >> local.properties
+          echo "KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}" >> local.properties
+
       - name: Set up Gradle
         uses: gradle/gradle-build-action@v2
 
