@@ -1,3 +1,5 @@
+// 앱 수준의 build.gradle 파일
+
 def generateVersionCode() {
     def versionPropsFile = file('version.properties')
     if (!versionPropsFile.exists()) {
@@ -49,6 +51,7 @@ android {
         viewBinding true
     }
 
+    // 서명 설정 (배포할 때 서명된 APK를 생성하기 위한 설정)
     signingConfigs {
         release {
             storeFile file(keystoreProperties['KEYSTORE_FILE'])
@@ -103,7 +106,7 @@ dependencies {
 }
 
 firebaseAppDistribution {
-    serviceCredentialsFile="./service-account.json" // 서비스 계정 키 파일 경로
+    serviceCredentialsFile="app/service-account.json" // 서비스 계정 키 파일 경로
     releaseNotes="초기 베타 배포 버전입니다." // 릴리즈 노트
     testers="kjylike@gmail.com,yheehyun@gmail.com" // 베타 테스터 이메일
 }
