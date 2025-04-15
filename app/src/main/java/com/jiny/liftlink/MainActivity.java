@@ -1,14 +1,10 @@
 package com.jiny.liftlink;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.view.WindowInsets;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -26,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(LOG_TAG, "onCreate");
         // 테마 먼저 적용
         ThemeManager.applyTheme(this);
         super.onCreate(savedInstanceState);
@@ -100,19 +97,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private int getStatusBarHeight(View view) {
-        Log.d(LOG_TAG, "빌드 버전: " + Build.VERSION.SDK_INT);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            WindowInsets windowInsets = view.getRootWindowInsets();
-            if (windowInsets != null) {
-                return windowInsets.getInsets(WindowInsets.Type.statusBars()).top;
-            }
-        } else {
-            @SuppressLint({"DiscouragedApi", "InternalInsetResource"}) int resourceId = view.getResources().getIdentifier("status_bar_height", "dimen", "android");
-            if (resourceId > 0) {
-                return view.getResources().getDimensionPixelSize(resourceId);
-            }
-        }
-        return 0;
-    }
 }
