@@ -29,7 +29,8 @@ jobs:
           echo "${{ secrets.FIREBASE_CREDENTIALS }}" > service-account.json
 
       - name: Decode Keystore
-        run: echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > keystore.jks
+        run: |
+          echo "${{ secrets.KEYSTORE_FILE }}" | base64 -d > keystore.jks
 
       - name: Create local.properties
         run: |
